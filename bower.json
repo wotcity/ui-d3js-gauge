@@ -1,0 +1,11 @@
+{
+  "name": "dotcity-starter-kit",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "3.0.3",
+    "font-awesome": "~4.2.0",
+    "jquery": "~2.0.3",
+    "backbone": "~1.2.0",
+    "d3": "~3.5.5"
+  }
+}
