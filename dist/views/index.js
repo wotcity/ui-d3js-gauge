@@ -14,7 +14,7 @@
     events: {
     },
     initialize: function() {
-      this.createGauge("weather", "Temp");
+      this.createGauge("weather", "Moisture");
     },
     render: function() {
       var temp = this.temp;
@@ -33,9 +33,9 @@
       {
          size: size,
          label: label,
-         min: undefined != min ? min : 0,
-         max: undefined != max ? max : 100,
-         minorTicks: 5
+         min: undefined != min ? min : 450,
+         max: undefined != max ? max : 650,
+         minorTicks: 1
       }
 
       var range = config.max - config.min;
