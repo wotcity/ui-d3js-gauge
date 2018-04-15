@@ -14,7 +14,7 @@
     events: {
     },
     initialize: function() {
-      this.createGauge("weather", "Moisture");
+      this.createGauge("weather", "Air Quality");
     },
     render: function() {
       var temp = this.temp;
@@ -23,7 +23,7 @@
       this.gauge.redraw(temp);
     },
     update: function(e) {
-      this.temp = JSON.parse(e.data).temperature;
+      this.temp = JSON.parse(e.data).quality;
       this.render();
     },
     createGauge: function(name, label, min, max)
@@ -33,8 +33,8 @@
       {
          size: size,
          label: label,
-         min: undefined != min ? min : 450,
-         max: undefined != max ? max : 650,
+         min: undefined != min ? min : 0,
+         max: undefined != max ? max : 300,
          minorTicks: 1
       }
 
